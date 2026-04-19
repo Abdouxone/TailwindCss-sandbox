@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,28 +9,94 @@
   </head>
   <body>
     <!-- Positioning -->
+    <div class="relative h-12 bg-red-200 w-1/2">
+      <p>Parent element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute child</p>
+      </div>
+    </div>
 
     <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-blue-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-cyan-200">
+        <p>Hello</p>
+      </div>
+    </div>
 
     <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-black">
+      <div class="absolute top-0 right-0 h-12 w-12 bg-white">
+        <p>yay</p>
+      </div>
+    </div>
 
     <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-pink-100">
+      <div class="absolute bottom-0 left-0 bg-purple-500">
+        <p>Bingo</p>
+      </div>
+    </div>
 
     <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-green-500">
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Bottom right</p>
+      </div>
+    </div>
 
     <!-- Span top edge -->
+    <div class="relative w-32 h-32 bg-yellow-500">
+      <div class="absolute top-0 inset-x-0 h-12 bg-yellow-100"></div>
+    </div>
 
     <!-- Span left edge -->
+    <div class="relative w-32 h-32 bg-yellow-300">
+      <div class="absolute left-0 inset-y-0 w-12 bg-yellow-100"></div>
+    </div>
 
     <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-black">
+      <div class="absolute right-0 inset-y-0 w-12 bg-cyan-500"></div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-500">
+      <div class="absolute bottom-0 h-12 inset-x-0 bg-red-100"></div>
+    </div>
 
     <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      soluta <span class="inline font-bold">This is Inline</span> a veritatis
+      sapiente dolorem consectetur. Magnam incidunt laborum ea deleniti
+      similique, soluta commodi
+      <span class="inline-block font-bold">inline block</span> nisi iusto quo
+      ipsum blanditiis quasi dolores, consectetur aspernatur, consequatur
+      repellendus! <span class="block font-bold">This is block</span> aspernatur
+      debitis magni, tempore quibusdam
+      <span class="hidden">This is hidden</span> rspiciatis a fugiat minus quos
+      iure obcaecati nulla.
+    </div>
 
     <!-- Z-Index -->
+    <div class="realtive h-36">
+      <div class="absolute w-24 h-24 bg-blue-200 z-40 left-10">1</div>
+      <div class="absolute w-24 h-24 bg-blue-300 left-20">2</div>
+      <div class="absolute w-24 h-24 bg-blue-400 left-40 z-10">3</div>
+      <div class="absolute w-24 h-24 bg-blue-500 left-60 z-20">4</div>
+      <div class="absolute w-24 h-24 bg-blue-600 left-80 z-30">5</div>
+    </div>
 
     <!-- Floats -->
+    <div class="w-1/2 bg-red-100">
+      <img src="../assets/img/img1.jpg" class="w-48 h-48 float-none" />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis,
+        nihil. Illo quis totam qui fugit incidunt explicabo, voluptatem, quasi
+        sint eaque soluta ipsa reiciendis dicta itaque hic magnam praesentium
+        maxime.
+      </p>
+    </div>
   </body>
 </html>
 
